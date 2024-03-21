@@ -1,9 +1,9 @@
-import LandingPageHeader from "./headers/LandingPageHeader";
+import MainLandingPage from "./landingPage/mainLandingPage";
 
 function App() {
   return (
     <>
-      <LandingPageHeader title="Stelr" />
+      <MainLandingPage />
     </>
   );
 }

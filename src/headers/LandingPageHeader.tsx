@@ -6,21 +6,35 @@ interface LandingPageHeaderProps {
 }
 
 const LandingPageHeader: FC<LandingPageHeaderProps> = ({ title }) => {
-  const containerStyle = {
+  const headerContainerStyle = {
     display: "flex",
     justifyContent: "space-between",
     padding: "20px",
     backgroundColor: "#F5F5F5",
+    alignItems: "center",
+  };
+
+  const headerSectionsStyle = {
+    display: "flex",
+    gap: "20px",
+  };
+
+  const titleStyle = {
+    color: "#00A6FB",
   };
 
   return (
-    <div style={containerStyle}>
-      <h1>{title}</h1>
-      <h4>About Us</h4>
-      <h4>Contact</h4>
-      <h4>FAQ</h4>
-      <PrimaryButton name="Login" />
-      <PrimaryButton name="Sign Up" />
+    <div style={headerContainerStyle}>
+      <h1 style={titleStyle}>{title}</h1>
+      <div style={headerSectionsStyle}>
+        <h2>About Us</h2>
+        <h2>Contact</h2>
+        <h2>FAQ</h2>
+      </div>
+      <div>
+        <PrimaryButton label="Login" />
+        <PrimaryButton label="Sign Up" />
+      </div>
     </div>
   );
 };
