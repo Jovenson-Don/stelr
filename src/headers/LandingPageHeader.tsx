@@ -9,7 +9,6 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = ({ title }) => {
   const headerContainerStyle = {
     display: "flex",
     justifyContent: "space-between",
-    padding: "20px",
     backgroundColor: "#F5F5F5",
     alignItems: "center",
   };
