@@ -1,15 +1,26 @@
 import { FC } from "react";
-import LoginButton from "../buttons/LoginButton";
+import PrimaryButton from "../buttons/PrimaryButton";
 
 interface LandingPageHeaderProps {
   title?: string;
 }
 
 const LandingPageHeader: FC<LandingPageHeaderProps> = ({ title }) => {
+  const containerStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "20px",
+    backgroundColor: "#F5F5F5",
+  };
+
   return (
-    <div>
+    <div style={containerStyle}>
       <h1>{title}</h1>
-      <LoginButton name="Login" />
+      <h4>About Us</h4>
+      <h4>Contact</h4>
+      <h4>FAQ</h4>
+      <PrimaryButton name="Login" />
+      <PrimaryButton name="Sign Up" />
     </div>
   );
 };

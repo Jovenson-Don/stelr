@@ -1,4 +1,3 @@
-import "./App.css";
 import LandingPageHeader from "./headers/LandingPageHeader";
 
 function App() {
