@@ -8,8 +8,8 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({ label }) => {
   const buttonStyle = {
     backgroundColor: "#00A6FB",
     color: "white",
-    borderRadius: "500px",
-    padding: "20px 20px",
+    borderRadius: "3em",
+    padding: "1em",
     border: "none",
     cursor: "pointer",
     margin: ".5em",

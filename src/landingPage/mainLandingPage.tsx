@@ -5,9 +5,9 @@ interface MainlandingPageProps {}
 
 const MainLandingPage: FC<MainlandingPageProps> = () => {
   return (
-    <>
+    <div>
       <LandingPageHeader title="Stelr" />
-    </>
+    </div>
   );
 };
 
