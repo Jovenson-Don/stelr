@@ -31,8 +31,8 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = ({ title }) => {
         <h2>FAQ</h2>
       </div>
       <div>
-        <PrimaryButton label="Login" />
-        <PrimaryButton label="Sign Up" />
+        <PrimaryButton to={"/login"} label="Login" />
+        <PrimaryButton to={"/signup"} label="Sign Up" />
       </div>
     </div>
   );
