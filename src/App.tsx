@@ -6,13 +6,13 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MainLayout from "./layouts/MainLayout";
-import PrimaryButton from "./components/buttons/PrimaryButton";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
-      <Route path="/login" element={<PrimaryButton />} />
+      <Route path="/login" element={<Login />} />
     </Route>
   )
 );
