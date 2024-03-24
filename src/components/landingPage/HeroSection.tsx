@@ -21,7 +21,7 @@ const HeroSection = () => {
     button: {
       backgroundColor: "#00A6FB",
       color: "white",
-      borderRadius: "3em",
+      borderRadius: ".5em",
       padding: "1em",
       border: "none",
       cursor: "pointer",

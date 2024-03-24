@@ -10,8 +10,11 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
 const router = createBrowserRouter(
+  // createRoutesFromElements takes in a Route element and returns a route object
   createRoutesFromElements(
+    // Route lets you define different paths in your application
     <Route>
+      {/* This route lets you keep the navbar at the top of each page that is in between its route tags */}
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
       </Route>
