@@ -1,10 +1,12 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 interface PrimaryButtonProps {
   label: string;
+  to?: string;
 }
 
-const PrimaryButton: FC<PrimaryButtonProps> = ({ label }) => {
+const PrimaryButton: FC<PrimaryButtonProps> = ({ label, to }) => {
   const buttonStyle = {
     backgroundColor: "#00A6FB",
     color: "white",
@@ -15,7 +17,13 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({ label }) => {
     margin: ".5em",
     fontSize: "1em",
   };
-  return <button style={buttonStyle}>{label}</button>;
+  return to ? (
+    <Link to={to}>
+      <button style={buttonStyle}>{label}</button>
+    </Link>
+  ) : (
+    <button style={buttonStyle}>{label}</button>
+  );
 };
 
 export default PrimaryButton;
