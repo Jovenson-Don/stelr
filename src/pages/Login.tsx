@@ -1,5 +1,7 @@
+import { useState } from "react";
 import background from "../../public/artwork/loginSignupBackground.png";
 import { Link } from "react-router-dom";
+import logo from "../../public/artwork/stelrLogoWhite.svg";
 
 function Login() {
   const styles: { [key: string]: React.CSSProperties } = {
@@ -17,6 +19,14 @@ function Login() {
       background: "white",
       width: "30%",
       padding: "2em",
+      marginTop: "2em",
+    },
+    logo: {
+      width: "12.5em",
+      height: "auto",
+      position: "absolute",
+      top: "1em",
+      left: "1em",
     },
     form: {
       display: "flex",
@@ -52,10 +62,32 @@ function Login() {
     },
   };
 
+  const [placeholderEmail, setPlaceholderEmail] = useState("tyana@gostelr.com");
+  const [placeholderPassword, setPlaceholderPassword] = useState("********");
+
+  const handleEmailFocus = () => {
+    setPlaceholderEmail("");
+  };
+
+  const handleEmailBlur = () => {
+    setPlaceholderEmail("tyana@gostelr.com");
+  };
+
+  const handlePasswordFocus = () => {
+    setPlaceholderPassword("");
+  };
+
+  const handlePasswordBlur = () => {
+    setPlaceholderPassword("********");
+  };
+
   return (
     <div style={styles.page}>
+      <Link to="/">
+        <img src={logo} alt="Stelr Logo" style={styles.logo} />
+      </Link>
       <div style={styles.card}>
-        <h2>Login to Account</h2>
+        <h1>Login to Account</h1>
         <p>Please enter you email and password to continue</p>
         <br />
         <form style={styles.form}>
@@ -68,7 +100,10 @@ function Login() {
             type="email"
             id="email"
             name="email"
-            placeholder="johndoe123@gmail.com"
+            placeholder={placeholderEmail}
+            onFocus={handleEmailFocus}
+            onBlur={handleEmailBlur}
+            autoComplete="on"
           />
           <br />
           <label style={styles.label} htmlFor="password">
@@ -80,7 +115,9 @@ function Login() {
             type="password"
             id="password"
             name="password"
-            placeholder="********"
+            placeholder={placeholderPassword}
+            onFocus={handlePasswordFocus}
+            onBlur={handlePasswordBlur}
           />
           <button style={styles.formButton}>Login</button>
         </form>
