@@ -1,16 +1,24 @@
 import { FC } from "react";
 import PrimaryButton from "../buttons/PrimaryButton";
+import { Link } from "react-router-dom";
 
 interface LandingPageHeaderProps {
   title?: string;
 }
 
-const LandingPageHeader: FC<LandingPageHeaderProps> = ({ title }) => {
+const LandingPageHeader: FC<LandingPageHeaderProps> = () => {
   const headerContainerStyle = {
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: "#F5F5F5",
+    backgroundColor: "#00A6FB",
     alignItems: "center",
+  };
+
+  const logo = {
+    width: "9.5em",
+    height: "auto",
+    top: "1em",
+    left: "1em",
   };
 
   const headerSectionsStyle = {
@@ -18,13 +26,15 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = ({ title }) => {
     gap: "20px",
   };
 
-  const titleStyle = {
-    color: "#00A6FB",
-  };
-
   return (
     <div style={headerContainerStyle}>
-      <h1 style={titleStyle}>{title}</h1>
+      <Link to="/">
+        <img
+          style={logo}
+          src="../public/artwork/stelrLogoWhiteYellowAccent.svg"
+          alt="Stelr Logo"
+        />
+      </Link>
       <div style={headerSectionsStyle}>
         <h2>About Us</h2>
         <h2>Contact</h2>

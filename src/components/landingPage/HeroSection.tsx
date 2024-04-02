@@ -19,7 +19,7 @@ const HeroSection = () => {
       fontSize: "1.5em",
     },
     button: {
-      backgroundColor: "#00A6FB",
+      backgroundColor: "#ff5400",
       color: "white",
       borderRadius: ".5em",
       padding: "1em",

@@ -8,7 +8,7 @@ interface PrimaryButtonProps {
 
 const PrimaryButton: FC<PrimaryButtonProps> = ({ label, to }) => {
   const buttonStyle = {
-    backgroundColor: "#00A6FB",
+    backgroundColor: "#ff5400",
     color: "white",
     borderRadius: ".5em",
     padding: "1em",

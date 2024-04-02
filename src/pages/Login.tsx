@@ -1,7 +1,7 @@
 import { useState } from "react";
 import background from "../../public/artwork/loginSignupBackground.png";
 import { Link } from "react-router-dom";
-import logo from "../../public/artwork/stelrLogoWhite.svg";
+import logo from "../../public/artwork/stelrLogoWhiteYellowAccent.svg";
 
 function Login() {
   const styles: { [key: string]: React.CSSProperties } = {
