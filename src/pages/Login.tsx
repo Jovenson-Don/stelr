@@ -11,6 +11,7 @@ function Login() {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      fontFamily: "Roboto, sans-serif",
     },
     card: {
       textAlign: "center",
