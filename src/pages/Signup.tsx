@@ -36,10 +36,10 @@ function Signup() {
     heading: {
       fontSize: "2em",
       margin: "0em",
+      textAlign: "center",
     },
     subheading: {
       fontSize: "1.2em",
-      // marginBottom: "2em",
     },
     form: {
       display: "flex",
@@ -75,7 +75,7 @@ function Signup() {
             <img src={logo} style={styles.logo} alt="Stelr Logo" />
           </h1>
         </Link>
-        <h2 style={styles.heading}>Invest in startups around the world</h2>
+        <h2 style={styles.heading}> GLOBAL LENDING AND INVESTING SIMPLIFIED</h2>
       </div>
       <div style={styles.pageRight}>
         <h1 style={styles.heading}>Create an Account</h1>
@@ -87,9 +87,6 @@ function Signup() {
           <input style={styles.input} placeholder="Email Address" />
           <input style={styles.input} placeholder="Country" />
           <input style={styles.input} placeholder="Date of Birth" />
-          <input style={styles.input} placeholder="Age Range" />
-          <input style={styles.input} placeholder="Gender" />
-          <input style={styles.input} placeholder="Occupation" />
           <input style={styles.input} placeholder="Password" type="password" />
           <input
             style={styles.input}
@@ -99,7 +96,7 @@ function Signup() {
           <button style={styles.button}>Sign Up</button>
         </form>
         <p>
-          Don't have an account? <Link to="/login">Create Account</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </p>
       </div>
     </div>
