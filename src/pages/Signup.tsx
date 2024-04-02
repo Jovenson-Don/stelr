@@ -1,4 +1,4 @@
-import logo from "../../public/artwork/stelrLogoWhite.svg";
+import logo from "../../public/artwork/stelrLogoWhiteYellowAccent.svg";
 import background from "../../public/artwork/loginSignupBackground.png";
 import { Link } from "react-router-dom";
 
