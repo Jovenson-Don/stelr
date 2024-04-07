@@ -21,11 +21,17 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = () => {
     height: "auto",
     top: "1em",
     left: "1em",
+    marginLeft: "3em",
   };
 
   const headerSectionsStyle = {
     display: "flex",
     gap: "20px",
+  };
+
+  const navbar = {
+    textDecoration: "none",
+    color: "#fff",
   };
 
   return (
@@ -34,7 +40,9 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = () => {
         <img style={logoStyle} src={logo} alt="Stelr Logo" />
       </Link>
       <div style={headerSectionsStyle}>
-        <h2>About Us</h2>
+        <Link style={navbar} to="/about">
+          <h2>About Us</h2>
+        </Link>
         <h2>Contact</h2>
         <h2>FAQ</h2>
       </div>

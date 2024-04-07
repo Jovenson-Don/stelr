@@ -1,7 +1,7 @@
 const HeroSection = () => {
   const styles: { [key: string]: React.CSSProperties } = {
     entireSection: {
-      background: "#ffbf00",
+      // background: "#ffbf00",
     },
     backgroundSection: {
       margin: "0 5em",
@@ -35,7 +35,7 @@ const HeroSection = () => {
       color: "white",
       borderRadius: ".5em",
       padding: "1em",
-      border: "none",
+      border: "1px solid white",
       cursor: "pointer",
       margin: "0 .5em 1em .5em",
       fontSize: "1em",
@@ -67,13 +67,6 @@ const HeroSection = () => {
           </div>
         </div>
         <div style={styles.container}>
-          <div>
-            <img
-              style={styles.img}
-              src="../public/artwork/lending.jpg"
-              alt="lending and investing simplified"
-            />
-          </div>
           <div style={styles.heroText}>
             <h2 style={styles.investingSimplified}>
               Uniting Worlds: Stelr's Peer-to-Peer Experience

@@ -12,7 +12,7 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({ label, to }) => {
     color: "white",
     borderRadius: ".5em",
     padding: "1em",
-    border: "none",
+    border: "1px solid white",
     cursor: "pointer",
     margin: ".5em",
     fontSize: "1em",
