@@ -1,7 +1,19 @@
+import BeforeLoginCards from "../components/cards/BeforeLoginCards";
+
 const About = () => {
+  const styles: { [key: string]: React.CSSProperties } = {
+    h1: {
+      color: "#00A6FB",
+      textAlign: "center",
+      fontSize: "2em",
+      margin: "1em",
+    },
+  };
+
   return (
     <div>
-      <h1>About Us</h1>
+      <BeforeLoginCards title="About Us" paragraph="paragraph" />
+      <h1 style={styles.h1}>About Us</h1>
       <p>
         Stelr is a peer to peer lending and payments platform that enables
         seamless connections and transactions for international funding,
