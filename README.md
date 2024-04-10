@@ -29,6 +29,7 @@ If you are cd'ing back to a previous branch you were working on, do git merge ma
 
 DO NOT PUSH CODE TO MAIN BRANCH!!!
 
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
