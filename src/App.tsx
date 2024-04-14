@@ -9,6 +9,7 @@ import MainLayout from "./layouts/MainLayout";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import About from "./pages/About";
+import WaitList from "./pages/WaitList";
 
 const router = createBrowserRouter(
   // createRoutesFromElements takes in a Route element and returns a route object
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/waitlist" element={<WaitList />} />
     </Route>
   )
 );

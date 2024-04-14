@@ -29,6 +29,7 @@ const HeroSection = () => {
     paragraph: {
       fontSize: "1.5em",
       color: "#fff",
+      padding: "0 1em",
     },
     button: {
       backgroundColor: "#ff5400",
@@ -69,18 +70,36 @@ const HeroSection = () => {
         <div style={styles.container}>
           <div style={styles.heroText}>
             <h2 style={styles.investingSimplified}>
-              Uniting Worlds: Stelr's Peer-to-Peer Experience
+              Uniting Worlds: The Stelr Experience
             </h2>
             <p style={styles.paragraph}>
-              Stelr is a peer to peer lending and payments platform that enables
-              seamless connections and transactions for international
-              funding/investments. Whether you’re looking to fund your business,
-              expand into new territories of growth, or send money across
-              countries/continents, Stelr is an inclusive all-in-one platform
-              that allows customers and investors alike to make transactions
-              with ease and comfort. Stelr is a platform that is designed to
-              make international transactions and investments as easy as
-              possible, with a focus on security and transparency.
+              Stelr is a lending and payments platform that enables seamless
+              connections and transactions for international funding/payments.
+              Whether you’re looking to fund your business, expand into new
+              territories of growth, or send money across countries/continents,
+              Stelr is an inclusive all-in-one platform that allows customers
+              and investors alike to make transactions with ease and comfort.
+              Stelr is a platform that is designed to make international
+              transactions and investments as easy as possible, with a focus on
+              security and transparency.
+              <br />
+              <br />
+              Whether you’re looking to fund your business, expand into new
+              territories of growth, process payments directly to international
+              parties or send money across countries/continents, Stelr is an
+              inclusive all-in-one platform that allows companies and investors
+              alike to transact with ease and comfort.
+              <br />
+              <br />
+              Our platform utilizes cutting edge financial technology throughout
+              the lending and payment processes to improve efficiency and change
+              the way the funding process takes place in underserved regions of
+              the world.
+              <br />
+              <br />
+              By creating our innovative platform, Stelr aims to serve our
+              clients globally and help them achieve their goals, no matter how
+              big, medium, or small.
             </p>
             <button style={styles.button}>Investor Seeking Company</button>
             <button style={styles.button}>Company Seeking Investor</button>
