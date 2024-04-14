@@ -50,7 +50,7 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = () => {
         {/* These two buttons will be our fute login and sign up buttons on our homepage. Do not delete. */}
         {/* <PrimaryButton to={"/login"} label="Login" />
         <PrimaryButton to={"/signup"} label="Sign Up" /> */}
-        <PrimaryButton to={"/waitlist"} label="Join Our Waitlist" />
+        <PrimaryButton to={"/waitlist"} label="Join Our WaitList" />
       </div>
     </div>
   );

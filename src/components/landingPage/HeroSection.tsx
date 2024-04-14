@@ -78,6 +78,28 @@ const HeroSection = () => {
     },
     h2: {
       textAlign: "center",
+      margin: ".5em 0 0 0",
+    },
+    paragraph1: {
+      fontSize: "1.5em",
+      color: "#fff",
+      padding: "0 1em",
+      margin: ".5em 1em",
+      textAlign: "center",
+    },
+    paragraph2: {
+      fontSize: "1.5em",
+      color: "#fff",
+      padding: "0 1em",
+      margin: ".5em 1em",
+      textAlign: "center",
+    },
+    paragraph3: {
+      fontSize: "1.5em",
+      color: "#fff",
+      padding: "0 1em",
+      margin: ".5em 1em",
+      textAlign: "center",
     },
   };
 
@@ -128,7 +150,7 @@ const HeroSection = () => {
         <div style={styles.cardThirdsContainer}>
           <div style={styles.cardThirds1}>
             <h2 style={styles.h2}>Transactional Inclusivity</h2>
-            <p style={styles.paragraph}>
+            <p style={styles.paragraph1}>
               Whether you’re looking to fund your business, expand into new
               territories of growth, process payments directly to international
               parties or send money across countries/continents, Stelr is an
@@ -138,7 +160,7 @@ const HeroSection = () => {
           </div>
           <div style={styles.cardThirds2}>
             <h2 style={styles.h2}>Innovation</h2>
-            <p style={styles.paragraph}>
+            <p style={styles.paragraph2}>
               Our platform utilizes cutting edge financial technology throughout
               the lending and payment processes to improve efficiency and change
               the way the funding process takes place in underserved regions of
@@ -147,10 +169,12 @@ const HeroSection = () => {
           </div>
           <div style={styles.cardThirds3}>
             <h2 style={styles.h2}>Outlook</h2>
-            <p style={styles.paragraph}>
-              By creating our innovative platform, Stelr aims to serve our
-              clients globally and help them achieve their goals, no matter how
-              big, medium, or small.
+            <p style={styles.paragraph3}>
+              Our mission is to change the way clients achieve their goals
+              globally. We strive to provide comprehensive support to clients of
+              all sizes, and empower them to succeed. Whether our clients are
+              pursuing ambitious goals or navigating challenges, Stelr is
+              dedicated to being a trusted partner every step of the way.
             </p>
           </div>
         </div>
