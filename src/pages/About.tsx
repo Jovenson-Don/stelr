@@ -1,4 +1,5 @@
 import BeforeLoginCards from "../components/cards/BeforeLoginCards";
+import LandingPageFooter from "../components/headers/LandingPageFooter";
 
 const About = () => {
   const styles: { [key: string]: React.CSSProperties } = {
@@ -29,6 +30,7 @@ const About = () => {
         Stelr aims to serve our clients globally and help them achieve their
         goals, no matter how big, medium, or small. “
       </p>
+      <LandingPageFooter />
     </div>
   );
 };

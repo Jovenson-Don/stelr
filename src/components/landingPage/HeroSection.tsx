@@ -1,3 +1,5 @@
+import LandingPageFooter from "../headers/LandingPageFooter";
+
 const HeroSection = () => {
   const styles: { [key: string]: React.CSSProperties } = {
     entireSection: {
@@ -15,7 +17,13 @@ const HeroSection = () => {
       width: "100%",
       borderRadius: "1em",
     },
-    heroText: {
+    heroText1: {
+      textAlign: "center",
+      borderRadius: "1em",
+      background: "#ffc238",
+      margin: "1em",
+    },
+    heroText2: {
       textAlign: "center",
       borderRadius: "1em",
       background: "#00A6FB",
@@ -41,13 +49,43 @@ const HeroSection = () => {
       margin: "0 .5em 1em .5em",
       fontSize: "1em",
     },
+    cardThirdsContainer: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "1em",
+    },
+    cardThirds1: {
+      background: "#ffc238",
+      color: "#fff",
+      borderRadius: "1em",
+      width: "33%",
+      height: "17em",
+    },
+    cardThirds2: {
+      background: "#00A6FB",
+      color: "#fff",
+      borderRadius: "1em",
+      width: "33%",
+      height: "17em",
+    },
+    cardThirds3: {
+      background: "#ff631d",
+      color: "#fff",
+      borderRadius: "1em",
+      width: "33%",
+      height: "17em",
+    },
+    h2: {
+      textAlign: "center",
+    },
   };
 
   return (
     <section style={styles.entireSection}>
       <div style={styles.backgroundSection}>
         <div style={styles.container}>
-          <div style={styles.heroText}>
+          <div style={styles.heroText1}>
             <h2 style={styles.investingSimplified}>
               GLOBAL LENDING AND INVESTING SIMPLIFIED
             </h2>
@@ -68,7 +106,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div style={styles.container}>
-          <div style={styles.heroText}>
+          <div style={styles.heroText2}>
             <h2 style={styles.investingSimplified}>
               Uniting Worlds: The Stelr Experience
             </h2>
@@ -82,30 +120,42 @@ const HeroSection = () => {
               Stelr is a platform that is designed to make international
               transactions and investments as easy as possible, with a focus on
               security and transparency.
-              <br />
-              <br />
-              Whether you’re looking to fund your business, expand into new
-              territories of growth, process payments directly to international
-              parties or send money across countries/continents, Stelr is an
-              inclusive all-in-one platform that allows companies and investors
-              alike to transact with ease and comfort.
-              <br />
-              <br />
-              Our platform utilizes cutting edge financial technology throughout
-              the lending and payment processes to improve efficiency and change
-              the way the funding process takes place in underserved regions of
-              the world.
-              <br />
-              <br />
-              By creating our innovative platform, Stelr aims to serve our
-              clients globally and help them achieve their goals, no matter how
-              big, medium, or small.
             </p>
             <button style={styles.button}>Investor Seeking Company</button>
             <button style={styles.button}>Company Seeking Investor</button>
           </div>
         </div>
+        <div style={styles.cardThirdsContainer}>
+          <div style={styles.cardThirds1}>
+            <h2 style={styles.h2}>Transactional Inclusivity</h2>
+            <p style={styles.paragraph}>
+              Whether you’re looking to fund your business, expand into new
+              territories of growth, process payments directly to international
+              parties or send money across countries/continents, Stelr is an
+              inclusive all-in-one platform that allows companies and investors
+              alike to transact with ease and comfort.
+            </p>
+          </div>
+          <div style={styles.cardThirds2}>
+            <h2 style={styles.h2}>Innovation</h2>
+            <p style={styles.paragraph}>
+              Our platform utilizes cutting edge financial technology throughout
+              the lending and payment processes to improve efficiency and change
+              the way the funding process takes place in underserved regions of
+              the world.
+            </p>
+          </div>
+          <div style={styles.cardThirds3}>
+            <h2 style={styles.h2}>Outlook</h2>
+            <p style={styles.paragraph}>
+              By creating our innovative platform, Stelr aims to serve our
+              clients globally and help them achieve their goals, no matter how
+              big, medium, or small.
+            </p>
+          </div>
+        </div>
       </div>
+      <LandingPageFooter />
     </section>
   );
 };
