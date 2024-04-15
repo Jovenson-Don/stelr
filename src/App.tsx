@@ -8,6 +8,9 @@ import HomePage from "./pages/HomePage";
 import MainLayout from "./layouts/MainLayout";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import About from "./pages/About";
+import WaitList from "./pages/WaitList";
+import LandingPageFooter from "./components/headers/LandingPageFooter";
 
 const router = createBrowserRouter(
   // createRoutesFromElements takes in a Route element and returns a route object
@@ -17,9 +20,12 @@ const router = createBrowserRouter(
       {/* This route lets you keep the navbar at the top of each page that is in between its route tags */}
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/" element={<LandingPageFooter />} />
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/waitlist" element={<WaitList />} />
     </Route>
   )
 );
