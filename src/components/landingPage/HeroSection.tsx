@@ -1,9 +1,16 @@
+import { Link } from "react-router-dom";
+import PrimaryButton from "../buttons/PrimaryButton";
 import LandingPageFooter from "../headers/LandingPageFooter";
 
 const HeroSection = () => {
   const styles: { [key: string]: React.CSSProperties } = {
     entireSection: {
       // background: "#ffbf00",
+      background:
+        "linear-gradient(330deg, rgba(255, 194, 56, 0.2), rgba(255, 99, 29, 0.2), rgba(0, 166, 251, 0.2))",
+      height: "100%",
+      opacity: "0.9",
+      zIndex: 1,
     },
     backgroundSection: {
       margin: "0 5em",
@@ -16,6 +23,8 @@ const HeroSection = () => {
     img: {
       width: "100%",
       borderRadius: "1em",
+      // height: "20em",
+      marginTop: "1em",
     },
     heroText1: {
       textAlign: "center",
@@ -52,29 +61,32 @@ const HeroSection = () => {
     cardThirdsContainer: {
       display: "flex",
       justifyContent: "space-between",
-      alignItems: "center",
+      alignItems: "stretch", // Align items to stretch vertically
       padding: "1em",
     },
     cardThirds1: {
       background: "#ffc238",
       color: "#fff",
       borderRadius: "1em",
-      width: "33%",
-      height: "17em",
+      flex: 1, // Let the card take up equal space
+      maxWidth: "calc(33% - 2em)", // Adjusting width to account for padding
+      margin: "0 0.5em", // Add margin for spacing between cards
     },
     cardThirds2: {
       background: "#00A6FB",
       color: "#fff",
       borderRadius: "1em",
-      width: "33%",
-      height: "17em",
+      flex: 1, // Let the card take up equal space
+      maxWidth: "calc(33% - 2em)", // Adjusting width to account for padding
+      margin: "0 0.5em", // Add margin for spacing between cards
     },
     cardThirds3: {
       background: "#ff631d",
       color: "#fff",
       borderRadius: "1em",
-      width: "33%",
-      height: "17em",
+      flex: 1, // Let the card take up equal space
+      maxWidth: "calc(33% - 2em)", // Adjusting width to account for padding
+      margin: "0 0.5em", // Add margin for spacing between cards
     },
     h2: {
       textAlign: "center",
@@ -101,6 +113,21 @@ const HeroSection = () => {
       margin: ".5em 1em",
       textAlign: "center",
     },
+    waitlist: {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      alignItems: "center",
+      background: "#ffbf00",
+      color: "white",
+      fontSize: "2em",
+    },
+    h3: {
+      margin: ".5em 0 0 0",
+    },
+    waitlistParagraph: {
+      margin: "0",
+    },
   };
 
   return (
@@ -116,8 +143,12 @@ const HeroSection = () => {
               seamlessly. Discover, connect, and fuel innovation with ease, all
               in one platform.
             </p>
-            <button style={styles.button}>Investor Seeking Company</button>
-            <button style={styles.button}>Company Seeking Investor</button>
+            <Link to="/about">
+              <button style={styles.button}>Investor Seeking Company</button>
+            </Link>
+            <Link to="/about">
+              <button style={styles.button}>Company Seeking Investor</button>
+            </Link>
           </div>
           <div>
             <img
@@ -143,8 +174,12 @@ const HeroSection = () => {
               transactions and investments as easy as possible, with a focus on
               security and transparency.
             </p>
-            <button style={styles.button}>Investor Seeking Company</button>
-            <button style={styles.button}>Company Seeking Investor</button>
+            <Link to="/about">
+              <button style={styles.button}>Investor Seeking Company</button>
+            </Link>
+            <Link to="/about">
+              <button style={styles.button}>Company Seeking Investor</button>
+            </Link>
           </div>
         </div>
         <div style={styles.cardThirdsContainer}>
@@ -178,6 +213,13 @@ const HeroSection = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div style={styles.waitlist}>
+        <h3 style={styles.h3}>Interested In What We Are Building?</h3>
+        <p style={styles.waitlistParagraph}>Join Our WaitList</p>
+        <form>
+          <PrimaryButton label="Join" to="/waitlist" dynamicPadding="0em 1em" />
+        </form>
       </div>
       <LandingPageFooter />
     </section>
