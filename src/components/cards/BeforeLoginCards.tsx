@@ -14,14 +14,21 @@ const BeforeLoginCards = ({
       color: "#00A6FB",
       textAlign: "center",
       fontSize: "2em",
-      margin: "1em",
+      margin: "0 1em",
+    },
+    paragraph: {
+      fontSize: "1.5em",
+      color: "#ff5400",
+      padding: "0 1em",
+      textAlign: "center",
+      fontWeight: "bold",
     },
   };
 
   return (
     <div>
       <h1 style={styles.h1}>{title}</h1>
-      <p>{paragraph}</p>
+      <p style={styles.paragraph}>{paragraph}</p>
       <span>{buttons}</span>
     </div>
   );
