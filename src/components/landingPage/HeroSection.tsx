@@ -218,7 +218,11 @@ const HeroSection = () => {
         <h3 style={styles.h3}>Interested In What We Are Building?</h3>
         <p style={styles.waitlistParagraph}>Join Our WaitList</p>
         <form>
-          <PrimaryButton label="Join" to="/waitlist" dynamicPadding="0em 1em" />
+          <PrimaryButton
+            label="Join Now"
+            to="/waitlist"
+            dynamicPadding="0em 1em"
+          />
         </form>
       </div>
       <LandingPageFooter />

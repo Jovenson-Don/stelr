@@ -17,6 +17,7 @@ const LandingPageFooter = () => {
     spans: {
       padding: "0 1em",
       margin: "0 1em",
+      fontSize: "24px",
     },
   };
 

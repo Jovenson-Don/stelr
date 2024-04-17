@@ -1,4 +1,4 @@
-const FAQ = () => {
+const Faq = () => {
   const styles: { [key: string]: React.CSSProperties } = {
     entirePage: {
       background:
@@ -19,4 +19,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Faq;

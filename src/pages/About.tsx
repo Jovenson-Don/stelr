@@ -104,16 +104,4 @@ const About = () => {
   );
 };
 
-// Goals:
-
-// We have many goals we will achieve on our platform. Some of our goals include:
-
-// Risk Mitigation
-// (We work diligently to bring you the most viable options that are best suited for you as an investor or company, based off of a number of metrics that allows us to curate a bespoke selection for you, all while mitigating the risk that is associated with these traditional processes.)
-
-// Creating an exceptional End-to-End User Experience
-// (Clients can make investments, send and receive payments, and seek to expand into new international territories with Stelr’s easy to use all-in-one platform. Engaging in these services has never been made this easy until Stelr.)
-
-// These are just a few of our goals we will accomplish on our platform. Follow us along the journey as we achieve our goals and exceed expectations.  We are excited to have you join us on this journey and we look forward to providing you with the best services possible.
-
 export default About;
