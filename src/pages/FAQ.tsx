@@ -8,61 +8,6 @@ const FAQ = () => {
       alignItems: "center",
       height: "100vh",
     },
-    // pageLeft: {
-    //   minHeight: "100vh",
-    //   background: `url(${background})`,
-    //   width: "50%",
-    //   display: "flex",
-    //   flexDirection: "column",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    //   color: "#fff",
-    //   padding: "2em",
-    // },
-    // pageRight: {
-    //   minHeight: "100vh",
-    //   textAlign: "center",
-    //   width: "50%",
-    //   display: "flex",
-    //   flexDirection: "column",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    //   padding: "2em",
-    // },
-    // logo: {
-    //   width: "6.5em",
-    //   height: "auto",
-    //   marginBottom: "2em",
-    // },
-    // heading: {
-    //   fontSize: "2em",
-    //   margin: "0em",
-    //   textAlign: "center",
-    // },
-    // subheading: {
-    //   fontSize: "1.2em",
-    // },
-    // form: {
-    //   display: "flex",
-    //   flexDirection: "column",
-    //   alignItems: "center",
-    // },
-    // input: {
-    //   width: "30em",
-    //   height: "3em",
-    //   marginBottom: "1em",
-    //   padding: "0.5em",
-    //   borderRadius: "0.5em",
-    //   border: "1px solid #ccc",
-    //   background: "rgba(128, 128, 128, 0.1)",
-    // },
-    // button: {
-    //   width: "20em",
-    //   height: "3em",
-    //   backgroundColor: "#00A6FB",
-    //   color: "#fff",
-    //   borderRadius: "0.5em",
-    // },
   };
 
   return (

@@ -46,7 +46,9 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = () => {
         <Link style={navbar} to="/contact">
           <h2>Contact</h2>
         </Link>
-        <h2>FAQ</h2>
+        <Link style={navbar} to="/faq">
+          <h2>FAQ</h2>
+        </Link>
       </div>
       <div>
         {/* These two buttons will be our fute login and sign up buttons on our homepage. Do not delete. */}

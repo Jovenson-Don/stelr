@@ -28,7 +28,9 @@ const LandingPageFooter = () => {
       <Link style={styles.footerLinks} to="/contact">
         <span style={styles.spans}>Contact</span>
       </Link>
-      <span style={styles.spans}>FAQ</span>
+      <Link style={styles.footerLinks} to="/faq">
+        <span style={styles.spans}>FAQ</span>
+      </Link>
     </footer>
   );
 };
