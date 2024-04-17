@@ -10,27 +10,35 @@ const BeforeLoginCards = ({
   buttons,
 }: BeforeLoginCardsProps): JSX.Element => {
   const styles: { [key: string]: React.CSSProperties } = {
+    cardAlign: {
+      display: "flex",
+      justifyContent: "space-between",
+      padding: "1em",
+    },
+    card: {
+      background: "#ff5400",
+      color: "#fff",
+      borderRadius: "1em",
+    },
     h1: {
-      color: "#00A6FB",
       textAlign: "center",
-      fontSize: "2em",
-      margin: "0 1em",
+      margin: ".5em 0 0 0",
+      fontSize: "3em",
     },
     paragraph: {
-      fontSize: "1.5em",
-      color: "#ff5400",
-      padding: "0 1em",
       textAlign: "center",
-      fontWeight: "bold",
+      fontSize: "1.5em",
     },
   };
 
   return (
-    <div>
-      <h1 style={styles.h1}>{title}</h1>
-      <p style={styles.paragraph}>{paragraph}</p>
-      <span>{buttons}</span>
-    </div>
+    <section style={styles.cardAlign}>
+      <div style={styles.card}>
+        <h1 style={styles.h1}>{title}</h1>
+        <p style={styles.paragraph}>{paragraph}</p>
+        <span>{buttons}</span>
+      </div>
+    </section>
   );
 };
 

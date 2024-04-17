@@ -43,7 +43,9 @@ const LandingPageHeader: FC<LandingPageHeaderProps> = () => {
         <Link style={navbar} to="/about">
           <h2>About Us</h2>
         </Link>
-        <h2>Contact</h2>
+        <Link style={navbar} to="/contact">
+          <h2>Contact</h2>
+        </Link>
         <h2>FAQ</h2>
       </div>
       <div>

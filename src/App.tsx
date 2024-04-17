@@ -11,6 +11,7 @@ import Signup from "./pages/Signup";
 import About from "./pages/About";
 import WaitList from "./pages/WaitList";
 import LandingPageFooter from "./components/headers/LandingPageFooter";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter(
   // createRoutesFromElements takes in a Route element and returns a route object
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/" element={<LandingPageFooter />} />
       </Route>
       <Route path="/login" element={<Login />} />
