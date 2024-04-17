@@ -136,7 +136,7 @@ const HeroSection = () => {
         <div style={styles.container}>
           <div style={styles.heroText1}>
             <h2 style={styles.investingSimplified}>
-              GLOBAL LENDING AND INVESTING SIMPLIFIED
+              GLOBAL LENDING AND PAYMENTS SIMPLIFIED
             </h2>
             <p style={styles.paragraph}>
               Connecting budding entrepreneurs with potential investors
@@ -144,10 +144,10 @@ const HeroSection = () => {
               in one platform.
             </p>
             <Link to="/about">
-              <button style={styles.button}>Investor Seeking Company</button>
+              <button style={styles.button}>Investor</button>
             </Link>
             <Link to="/about">
-              <button style={styles.button}>Company Seeking Investor</button>
+              <button style={styles.button}>Company</button>
             </Link>
           </div>
           <div>
@@ -175,10 +175,10 @@ const HeroSection = () => {
               security and transparency.
             </p>
             <Link to="/about">
-              <button style={styles.button}>Investor Seeking Company</button>
+              <button style={styles.button}>Investor</button>
             </Link>
             <Link to="/about">
-              <button style={styles.button}>Company Seeking Investor</button>
+              <button style={styles.button}>Company</button>
             </Link>
           </div>
         </div>

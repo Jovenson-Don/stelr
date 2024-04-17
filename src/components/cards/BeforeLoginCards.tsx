@@ -2,12 +2,14 @@ interface BeforeLoginCardsProps {
   title?: string;
   paragraph?: string;
   buttons?: JSX.Element;
+  backgroundColor?: string;
 }
 
 const BeforeLoginCards = ({
   title,
   paragraph,
   buttons,
+  backgroundColor,
 }: BeforeLoginCardsProps): JSX.Element => {
   const styles: { [key: string]: React.CSSProperties } = {
     cardAlign: {
@@ -16,7 +18,7 @@ const BeforeLoginCards = ({
       padding: "1em",
     },
     card: {
-      background: "#ff5400",
+      background: backgroundColor || "#ff5400",
       color: "#fff",
       borderRadius: "1em",
     },
@@ -28,6 +30,7 @@ const BeforeLoginCards = ({
     paragraph: {
       textAlign: "center",
       fontSize: "1.5em",
+      padding: "0 2em",
     },
   };
 

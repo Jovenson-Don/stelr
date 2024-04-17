@@ -1,6 +1,7 @@
 import logo from "../../public/artwork/stelrLogoWhiteYellowAccent.svg";
 import background from "../../public/artwork/loginSignupBackground.png";
 import { Link } from "react-router-dom";
+import { useForm, ValidationError } from "@formspree/react";
 
 function WaitList() {
   const styles: { [key: string]: React.CSSProperties } = {
@@ -84,6 +85,11 @@ function WaitList() {
     },
   };
 
+  const [state, handleSubmit] = useForm("mzbnybgb");
+  if (state.succeeded) {
+    return <p>Thanks for joining the waitlist! We'll be in touch soon.</p>;
+  }
+
   return (
     <div style={styles.entirePage}>
       <div style={styles.pageLeft}>
@@ -99,15 +105,21 @@ function WaitList() {
         <p style={styles.subheading}>
           Please enter your information to Join Our Waitlist
         </p>
-        <form style={styles.form}>
+        <form onSubmit={handleSubmit} style={styles.form}>
           <label style={styles.label} htmlFor="fullName">
             Full Name:
           </label>
           <input
             id="fullName"
             name="fullName"
+            type="text"
             style={styles.input}
             placeholder="Full Name"
+          />
+          <ValidationError
+            prefix="fullName"
+            field="fullName"
+            errors={state.errors}
           />
           <label style={styles.label} htmlFor="email">
             Email Address:
@@ -119,14 +131,25 @@ function WaitList() {
             placeholder="Email Address"
             required
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
           <label style={styles.label} htmlFor="accountType">
             Account Type
           </label>
-          <select id="accountType" style={styles.selectInput}>
+          <select
+            name="account type"
+            id="accountType"
+            style={styles.selectInput}
+          >
             <option value="company">Company</option>
             <option value="investor">Lender</option>
           </select>
-          <button style={styles.button}>Join</button>
+          <button
+            disabled={state.submitting}
+            type="submit"
+            style={styles.button}
+          >
+            Join
+          </button>
         </form>
       </div>
     </div>
