@@ -10,6 +10,7 @@ const Contact = () => {
       alignItems: "center",
       height: "100vh",
     },
+
     pageContainer: {
       display: "flex",
       justifyContent: "center",
