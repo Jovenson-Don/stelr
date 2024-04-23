@@ -3,7 +3,7 @@ import App from "./App.tsx";
 import { HashRouter as Router } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <Router>
+  <Router basename="/stelr">
     <App />
   </Router>
 );
